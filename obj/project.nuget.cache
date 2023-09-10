@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dQaX9ygqB0RX2HgMX2C1lvO5wTNSmf3xWwfxVXdThR+Gg4pjCsDYafOU+YTosGQRDrKqUaCRoliiisqQfBILqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LAB-7\\source\\repos\\Bank System\\Bank System\\Bank System.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LAB-7\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

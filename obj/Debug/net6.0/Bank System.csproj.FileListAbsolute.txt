@@ -1,0 +1,17 @@
+C:\Users\LAB-7\source\repos\Bank System\Bank System\bin\Debug\net6.0\Bank System.exe
+C:\Users\LAB-7\source\repos\Bank System\Bank System\bin\Debug\net6.0\Bank System.deps.json
+C:\Users\LAB-7\source\repos\Bank System\Bank System\bin\Debug\net6.0\Bank System.runtimeconfig.json
+C:\Users\LAB-7\source\repos\Bank System\Bank System\bin\Debug\net6.0\Bank System.dll
+C:\Users\LAB-7\source\repos\Bank System\Bank System\bin\Debug\net6.0\Bank System.pdb
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.csproj.AssemblyReference.cache
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.AssemblyInfoInputs.cache
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.AssemblyInfo.cs
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.csproj.CoreCompileInputs.cache
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.dll
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\refint\Bank System.dll
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.pdb
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.genruntimeconfig.cache
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\ref\Bank System.dll
+C:\Users\LAB-7\source\repos\Bank System\Bank System\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\LAB-7\source\repos\Bank System\Bank System\obj\Debug\net6.0\Bank System.csproj.CopyComplete
