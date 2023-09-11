@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Security.Authentication;
+using System.Security.Principal;
+using System.Text.Json;
+using System.Transactions;
 
 class User
 {
     public string Email { get; set; }
     public string Password { get; set; }
     public string Name { get; set; }
+
+    public Dictionary<User, List<BankAccount>> userAccounts = new Dictionary<User, List<BankAccount>>();
 }
 
 class BankAccount
@@ -22,11 +27,12 @@ class BankSystem
     private static List<User> users = new List<User>();
     private static List<BankAccount> accounts = new List<BankAccount>();
     private static User currentUser;
+    private string userDataDirectory = "Bank System";
+    private string userDataFile = "Bank System/users.json";
 
     static void Main(string[] args)
     {
         bool exit = false;
-
         while (!exit)
         {
             Console.WriteLine("Bank System Menu");
@@ -194,7 +200,7 @@ class BankSystem
     static string GenerateUniqueAccountNumber()
     {
         Random random = new Random();
-        return random.Next(10000000, 999999999).ToString();   
+        return random.Next(10000000, 999999999).ToString();
     }
 
     static void Deposit()
@@ -356,4 +362,43 @@ class BankSystem
             Console.WriteLine("Failed to retrieve exchange rate.");
         }
     }
+
+    public void SaveUserAccountsToJson()
+        {
+            try
+            {
+                string fileName = "UserAccounts.json";
+                string json = JsonSerializer.Serialize(users, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(fileName, json);
+                Console.WriteLine("User-account associations saved successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred while saving user-account associations: {ex.Message}");
+                
+            }
+        }
+
+
+        public void LoadUserAccountsFromJson()
+        {
+            try
+            {
+                string fileName = "UserAccounts.json";
+                if (File.Exists(fileName))
+                {
+                    string json = File.ReadAllText(fileName);
+                    account = JsonSerializer.Deserialize<Dictionary<BankSystem, List<BankAccount>>>(json);
+                    Console.WriteLine($"Loaded user-account associations from {fileName}");
+                }
+                else
+                {
+                    Console.WriteLine($"File {fileName} does not exist.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred while loading user-account associations: {ex.Message}");
+            }
+        }
 }
